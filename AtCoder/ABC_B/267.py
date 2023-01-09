@@ -22,10 +22,12 @@ else:
 	print("No")
 	exit()
 
-for i in range(2, 7):
-	if sff[i-2] == 1 and sff[i] == 1:
-		if sff[i-1] == 0:
-			print("Yes")
-			exit()
+for i in range(0, 5):
+	for j in range(i+2, 7):
+		if sff[i] == 1 and sff[j] == 1:
+			for k in range(i+1, j):
+				if sff[k] == 0:
+					print("Yes")
+					exit()
 
 print("No")
