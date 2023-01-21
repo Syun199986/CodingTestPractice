@@ -11,7 +11,8 @@ while i < n:
 		ans_list.append(s[i-1])
 	i += 1
 
-ans_list.append(s[n-1])
+if i == n:
+	ans_list.append(s[n-1])
 
 ans = ''.join(ans_list)
 
